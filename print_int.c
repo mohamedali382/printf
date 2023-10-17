@@ -77,7 +77,7 @@ int print_dec(va_list inti)
 
 		while (ex > 0)
 		{
-			digit = numb /ex;
+			digit = numb / ex;
 			puttchhr(digit + '0');
 			numb -= (digit * ex);
 			ex = ex / 10;

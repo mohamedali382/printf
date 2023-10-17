@@ -38,6 +38,13 @@ int _printf(const char *format, ...)
 			i++;
 			co += (cout - 1);
 		}
+		else if (format[i + 1] == 'd')
+		{
+			cout = print_int(ptr);
+			i++;
+			co += (cout - 1);
+
+		}
 		else if (format[i + 1] == '%')
 		{
 		puttchhr('%');
